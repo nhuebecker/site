@@ -109,7 +109,7 @@ export default () => (
           <Service href="https://github.com/nhuebecker" icon="github" />
           <Service href="https://instagram.com/nhuebecker" icon="instagram" />
           <Service
-            href="mailto:nikols@stersvoice"
+            href="mailto:nikolas@stersvoice"
             icon="mail_outline"
           />
         </Flex>
