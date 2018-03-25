@@ -15,6 +15,7 @@ export const colors = {
   steel: '#273444',
   slate: '#3c4858',
   grey: '#8492a6',
+  grey2: '#5f6e76',
   // smoke3: '#c0ccda',
   // smoke2: '#d3dce6',
   smoke: '#e0e6ed',

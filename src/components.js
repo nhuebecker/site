@@ -107,14 +107,14 @@ export const Icon = ({
 
 export const Service = ({ href, icon, ...props }) => (
   <Link target="_blank" href={href} mx={2} {...props}>
-    <Icon name={icon} fill={colors.blue} />
+    <Icon name={icon} fill={colors.grey2} />
   </Link>
 )
 
 export const Footer = ({ file = 'index', ...props }) => (
   <Text center py={3}>
     <Link
-      href={`https://github.com/lachlanjc/site/blob/glitch/src/pages/${file}.js`}
+      href={`https://github.com/nhuebecker/site/blob/master/src/pages/${file}.js`}
       f={5}
     >
       ⌨️
