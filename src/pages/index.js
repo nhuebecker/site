@@ -99,7 +99,7 @@ export default () => (
         <Box>
           <Status>
             {'building dope things  @ '}
-            <Link href="https://hackclub.com" color="#288ecd">
+            <Link href="https://stersvoice.com" color="#288ecd">
               stersvoice
             </Link>
           </Status>
@@ -108,10 +108,7 @@ export default () => (
           <Service href="https://twitter.com/nhuebecker" icon="twitter" />
           <Service href="https://github.com/nhuebecker" icon="github" />
           <Service href="https://instagram.com/nhuebecker" icon="instagram" />
-          <Service
-            href="mailto:nikolas@stersvoice"
-            icon="mail_outline"
-          />
+          <Service href="mailto:nikolas@stersvoice.com" icon="mail_outline" />
         </Flex>
       </NameBox>
     </Masthead>
