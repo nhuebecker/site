@@ -91,6 +91,52 @@ export const Project = ({ name, url, description, color = 'white' }) => (
   </FloatLink>
 )
 
+export const ResumeGrid = Flex.extend.attrs({
+  px: [2, 3],
+  py: 1,
+  direction: ['column', 'row'],
+  justify: 'center',
+  wrap: true
+})`
+`
+const ResumeItemName = Subhead.extend`
+  color: inherit;
+`
+
+const ResumeItemDate = Text.extend`
+  color: inherit;
+  opacity: 0.85;
+`
+
+const ResumeItemDescription = Text.extend`
+  color: inherit;
+  opacity: 0.85;
+`
+
+export const ResumeProject = ({ name, url, date, description, color = 'white' }) => (
+  <FloatLink
+    href={isEmpty(url) ? '#' : `https://${url}`}
+    target="_blank"
+    id={kebabCase(deburr(name))}
+    bg={color}
+    color="white"
+    w={[1, 2 / 5, 1 / 3]}
+    m={[0, 2]}
+    mt={2}
+    p={3}
+  >
+    <ResumeItemName f={4} m={0}>
+      {name}
+    </ResumeItemName>
+    <ResumeItemDate f={1} mt={1} mb={1}>
+      {date}
+    </ResumeItemDate>
+    <ResumeItemDescription f={[2, 3]} mt={1} mb={0}>
+      {description}
+    </ResumeItemDescription>
+  </FloatLink>
+)
+
 export const Icon = ({
   name = 'x',
   fill = colors.white,
