@@ -95,7 +95,7 @@ export default () => (
       </PortraitBox>
       <NameBox>
         <Name>Nikolas Huebecker</Name>
-        <Bio>Entreprenuer, developer and high schooler.</Bio>
+        <Bio>Entrepreneur, developer and high schooler.</Bio>
         <Box>
           <Status>
             {'building dope things  @ '}
