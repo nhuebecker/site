@@ -57,7 +57,7 @@ export const groups = [
     color: '#e4732d'
   },
   {
-    name: 'Music',
+    name: 'SocStuds',
     url: '//web.groupme.com/join_group/39629651/uixOZZ ',
     description: '',
     color: '#28cebb'
