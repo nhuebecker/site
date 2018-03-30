@@ -45,7 +45,7 @@ export const groups = [
     color: '#ce283b'
   },
   {
-    name: 'Enginering',
+    name: 'Engineering',
     url: '//groupme.com/join_group/39667703/VXRFC9',
     description: '',
     color: '#93a1aa'
@@ -55,6 +55,12 @@ export const groups = [
     url: '//groupme.com/join_group/39667649/zdrgNp',
     description: '',
     color: '#e4732d'
+  },
+  {
+    name: 'Music',
+    url: '//web.groupme.com/join_group/39629651/uixOZZ ',
+    description: '',
+    color: '#28cebb'
   }
 ]
 
