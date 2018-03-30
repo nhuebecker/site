@@ -12,12 +12,54 @@ import {
   Service,
   Footer
 } from '../components'
-import { employment, education, community } from '../resume-data'
+
+export const groups = [
+  {
+    name: 'Science',
+    url: '//groupme.com/join_group/39668401/czPPXR',
+    description: '',
+    color: '#288ecd'
+  },
+  {
+    name: 'Math',
+    url: '//groupme.com/join_group/39667359/wtcRNx',
+    description: '',
+    color: '#6728cd'
+  },
+  {
+    name: 'Comm Arts',
+    url: '//groupme.com/join_group/37850597/nqrwC9',
+    description: '',
+    color: '#bb28ce'
+  },
+  {
+    name: 'Vis Arts',
+    url: '//groupme.com/join_group/39667605/VFOrLI',
+    description: '',
+    color: '#ce288e'
+  },
+  {
+    name: 'Aggies',
+    url: '//groupme.com/join_group/39667620/BD8vrJ',
+    description: '',
+    color: '#ce283b'
+  },
+  {
+    name: 'Enginering',
+    url: '//groupme.com/join_group/39667703/VXRFC9',
+    description: '',
+    color: '#93a1aa'
+  },
+  {
+    name: 'Music',
+    url: '//groupme.com/join_group/39667649/zdrgNp',
+    description: '',
+    color: '#e4732d'
+  }
+]
 
 const sections = [
-  ['Employment History', 'work', employment],
-  ['Education', 'school', education],
-  ['Volunteer Work', 'access_time', community]
+  ['Groups', 'work', groups]
 ]
 
 const backgroundImage =
@@ -39,7 +81,7 @@ export default () => (
         color={colors.white}
         style={{ fontWeight: 300 }}
       >
-        @nhuebecker/<strong style={{ fontWeight: 800 }}>resume</strong>
+        <strong style={{ fontWeight: 800 }}>GHP GroupMe Links</strong>
       </Heading>
     </Masthead>
     {sections.map(section => (
@@ -50,10 +92,8 @@ export default () => (
             <ResumeProject
               name={item.name}
               url={item.url}
-              date={item.date}
               description={item.description}
               color={item.color}
-              key={item.url}
             />
           ))}
         </ResumeGrid>
