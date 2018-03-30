@@ -58,9 +58,21 @@ export const groups = [
   },
   {
     name: 'Music',
-    url: '//web.groupme.com/join_group/39629651/uixOZZ ',
+    url: '//web.groupme.com/join_group/39629651/uixOZZ',
     description: '',
     color: '#28cebb'
+  },
+  {
+    name: 'World Languages',
+    url: 'https://groupme.com/join_group/39668004/WlYfl4',
+    description: '',
+    color: '#28ce68'
+  },
+  {
+    name: 'Voice',
+    url: 'https://groupme.com/join_group/39667515/ObXxEY',
+    description: '',
+    color: '#9ee42d'
   }
 ]
 
