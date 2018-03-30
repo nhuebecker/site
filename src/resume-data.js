@@ -30,7 +30,7 @@ export const community = [
   {
     name: 'StudentRND',
     url: '//srnd.org',
-    date: '170 Hours',
+    date: '',
     description: 'Regional Manager and Code Evangalist',
     color: '#ff4949'
   },
