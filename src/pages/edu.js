@@ -10,14 +10,14 @@ import {
   ResumeProject,
   Icon,
   Service,
-  Footer
+  Footer,
 } from '../components'
 import { employment, education, community } from '../resume-data'
 
 const sections = [
   ['Employment History', 'work', employment],
   ['Education', 'school', education],
-  ['Volunteer Work', 'access_time', community]
+  ['Volunteer Work', 'access_time', community],
 ]
 
 const backgroundImage =

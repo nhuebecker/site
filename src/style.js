@@ -22,7 +22,7 @@ export const colors = {
   // snow3: '#e5e9f2',
   // snow2: '#eff2f7',
   snow: '#f9fafc',
-  white: '#ffffff'
+  white: '#ffffff',
 }
 
 export const borderRadius = 2
@@ -30,6 +30,6 @@ export const borderRadiusXl = borderRadius * 2
 export const bold = 600
 
 const theme = {
-  colors
+  colors,
 }
 export default theme
