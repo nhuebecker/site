@@ -57,6 +57,15 @@ const Status = Text.extend.attrs({ f: 3, color: 'slate', mt: 0, mb: 4 })`
   margin-left: -0.5em;
   line-height: 1.5;
 `
+const StatusTwo = Text.extend.attrs({ f: 3, color: 'slate', mt: 0, mb: 4 })`
+  display: inline-block;
+  background-color: #e494f6;
+  background-image: linear-gradient(-100deg, #f9e9fd, #f3d2fb 95%, #f3d2fb);
+  border-radius: 999px;
+  padding: 0 .5em;
+  margin-left: -0.5em;
+  line-height: 1.5;
+`
 
 const PortraitBox = props => (
   <Flex
@@ -69,6 +78,7 @@ const PortraitBox = props => (
     {...props}
   />
 )
+
 const Portrait = FloatLink.withComponent(Image).extend`
   border-radius: 12px;
   max-height: 40vh;
@@ -91,19 +101,27 @@ export default () => (
   <div>
     <Masthead>
       <PortraitBox>
-        <Portrait src="/static/portrait.jpg" />
+        <Portrait src="/static/portrait-new.jpg" />
       </PortraitBox>
       <NameBox>
         <Name>Nikolas Huebecker</Name>
         <Bio>Entrepreneur, developer and high schooler.</Bio>
-        <Box>
+        <Box >
           <Status>
             {'building dope things  @ '}
-            <Link href="https://stersvoice.com" color="#288ecd">
-              stersvoice
+            <Link href="https://teenmade.com" color="#288ecd">
+              teenmade
             </Link>
           </Status>
         </Box>
+        {/* <Box my={0} >
+          <StatusTwo>
+            {'intern / master of PANDAmonium  @ '}
+            <Link href="https://panda.af" color="#9800ba">
+              panda
+            </Link>
+          </StatusTwo>
+        </Box> */}
         <Flex align="center" justify={['center', 'flex-start']}>
           <Service href="https://twitter.com/nhuebecker" icon="twitter" />
           <Service href="https://github.com/nhuebecker" icon="github" />
