@@ -4,7 +4,7 @@ import { Flex, Box, Heading, Subhead, Text, Link, Image } from 'rebass'
 import { isEmpty, kebabCase, deburr, replace } from 'lodash'
 
 export const mono = {
-  fontFamily: 'SFMono-Regular, Consolas, Menlo, Courier, monospace'
+  fontFamily: 'SFMono-Regular, Consolas, Menlo, Courier, monospace',
 }
 
 export const Header = props => (
@@ -23,7 +23,7 @@ export const Header = props => (
 const Subheader = Flex.extend.attrs({
   align: 'center',
   justify: 'center',
-  color: colors.steel
+  color: colors.steel,
 })`
   text-align: center;
   text-transform: uppercase;
@@ -59,7 +59,7 @@ export const ProjectGrid = Flex.extend.attrs({
   py: 1,
   direction: ['column', 'row'],
   justify: 'center',
-  wrap: true
+  wrap: true,
 })`
 `
 const ProjectName = Subhead.extend`
@@ -96,7 +96,7 @@ export const ResumeGrid = Flex.extend.attrs({
   py: 1,
   direction: ['column', 'row'],
   justify: 'center',
-  wrap: true
+  wrap: true,
 })`
 `
 const ResumeItemName = Subhead.extend`
@@ -113,7 +113,13 @@ const ResumeItemDescription = Text.extend`
   opacity: 0.85;
 `
 
-export const ResumeProject = ({ name, url, date, description, color = 'white' }) => (
+export const ResumeProject = ({
+  name,
+  url,
+  date,
+  description,
+  color = 'white',
+}) => (
   <FloatLink
     href={isEmpty(url) ? '#' : `https://${url}`}
     target="_blank"

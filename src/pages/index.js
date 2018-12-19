@@ -8,7 +8,7 @@ import {
   Text,
   Avatar,
   Link,
-  Image
+  Image,
 } from 'rebass'
 import { kebabCase } from 'lodash'
 import { colors, mx } from '../style'
@@ -20,19 +20,19 @@ import {
   Project,
   Icon,
   Service,
-  Footer
+  Footer,
 } from '../components'
 import { main, oss, prev } from '../data'
 
 const sections = [
   ['Projects', 'layers', main],
   ['Open Source', 'open_in_browser', oss],
-  ['Previously', 'access_time', prev]
+  ['Previously', 'access_time', prev],
 ]
 
 const Masthead = Flex.extend.attrs({
   direction: ['column', 'row'],
-  px: 3
+  px: 3,
 })`
   text-align: center;
   ${mx[0]} {
@@ -51,16 +51,10 @@ const Bio = Subhead.extend.attrs({ is: 'h2', color: 'grey', mt: 1, mb: 3 })`
 const Status = Text.extend.attrs({ f: 3, color: 'slate', mt: 0, mb: 4 })`
   display: inline-block;
   background-color: #f6bbc2;
-  background-image: linear-gradient(-100deg, #e6f3fb, #cbe7f8 95%, #add9f4);
-  border-radius: 999px;
-  padding: 0 .5em;
-  margin-left: -0.5em;
-  line-height: 1.5;
-`
-const StatusTwo = Text.extend.attrs({ f: 3, color: 'slate', mt: 0, mb: 4 })`
-  display: inline-block;
-  background-color: #e494f6;
-  background-image: linear-gradient(-100deg, #f9e9fd, #f3d2fb 95%, #f3d2fb);
+  background-image: linear-gradient(-100deg, ${props =>
+    props.gradientVals[2] || '#e6f3fb'}, ${props =>
+  props.gradientVals[1] || '#cbe7f8'} 95%, ${props =>
+  props.gradientVals[0] || '#add9f4'});
   border-radius: 999px;
   padding: 0 .5em;
   margin-left: -0.5em;
@@ -106,22 +100,22 @@ export default () => (
       <NameBox>
         <Name>Nikolas Huebecker</Name>
         <Bio>Entrepreneur, developer and high schooler.</Bio>
-        <Box >
-          <Status>
+        <Box>
+          <Status gradientVals={[]}>
             {'building dope things  @ '}
             <Link href="https://teenmade.com" color="#288ecd">
               teenmade
             </Link>
           </Status>
         </Box>
-        {/* <Box my={0} >
-          <StatusTwo>
+        <Box mt={'-1em'}>
+          <Status gradientVals={['#f3d2fb', '#f3d2fb', '#f9e9fd']}>
             {'intern / master of PANDAmonium  @ '}
             <Link href="https://panda.af" color="#9800ba">
               panda
             </Link>
-          </StatusTwo>
-        </Box> */}
+          </Status>
+        </Box>
         <Flex align="center" justify={['center', 'flex-start']}>
           <Service href="https://twitter.com/nhuebecker" icon="twitter" />
           <Service href="https://github.com/nhuebecker" icon="github" />
