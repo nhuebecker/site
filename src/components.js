@@ -166,7 +166,7 @@ export const Service = ({ href, icon, ...props }) => (
 export const Footer = ({ file = 'index', ...props }) => (
   <Text center py={3}>
     <Link
-      href={`https://github.com/nhuebecker/site/blob/master/src/pages/${file}.js`}
+      href={`https://github.com/nhuebecker/site/blob/master/public/${file}.html`}
       f={5}
     >
       ⌨️
