@@ -95,32 +95,32 @@ export default () => (
   <div>
     <Masthead>
       <PortraitBox>
-        <Portrait src="/static/portrait-new.jpg" />
+        <Portrait src="/static/huebecker-45.jpg" />
       </PortraitBox>
       <NameBox>
         <Name>Nikolas Huebecker</Name>
         <Bio>Entrepreneur, developer and high schooler.</Bio>
         <Box>
-          <Status gradientVals={[]}>
-            {'building dope things  @ '}
-            <Link href="https://teenmade.com" color="#288ecd">
-              teenmade
+          <Status gradientVals={['#ff8082','#ffb3b4', '#ffb3b4']}>
+            {'program manager  @ '}
+            <Link href="https://srnd.org" color="#ff4d4f">
+              srnd
             </Link>
           </Status>
         </Box>
-        <Box mt={'-1em'}>
+        {/* <Box mt={'-1em'}>
           <Status gradientVals={['#f3d2fb', '#f3d2fb', '#f9e9fd']}>
             {'intern / master of PANDAmonium  @ '}
             <Link href="https://panda.af" color="#9800ba">
               panda
             </Link>
           </Status>
-        </Box>
+        </Box> */}
         <Flex align="center" justify={['center', 'flex-start']}>
           <Service href="https://twitter.com/nhuebecker" icon="twitter" />
           <Service href="https://github.com/nhuebecker" icon="github" />
           <Service href="https://instagram.com/nhuebecker" icon="instagram" />
-          <Service href="mailto:nikolas@stersvoice.com" icon="mail_outline" />
+          <Service href="mailto:nikolas@srnd.org" icon="mail_outline" />
         </Flex>
       </NameBox>
     </Masthead>
