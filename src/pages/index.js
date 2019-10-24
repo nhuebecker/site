@@ -101,7 +101,7 @@ export default () => (
         <Name>Nikolas Huebecker</Name>
         <Bio>Entrepreneur, developer and high schooler.</Bio>
         <Box>
-          <Status gradientVals={['#ff8082','#ffb3b4', '#ffb3b4']}>
+          <Status gradientVals={['#ff8082', '#ffb3b4', '#ffb3b4']}>
             {'program manager  @ '}
             <Link href="https://srnd.org" color="#ff4d4f">
               srnd
