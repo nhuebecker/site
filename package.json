@@ -1,27 +1,18 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
-  "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "dependencies": {
-    "gatsby": "^1.9.238",
-    "gatsby-link": "^1.6.39",
-    "gatsby-plugin-react-helmet": "^2.0.8",
-    "gatsby-plugin-styled-components": "^2.0.10",
-    "react-helmet": "^5.2.0",
-    "rebass": "^1.0.7"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
+  "name": "site",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "devDependencies": {
-    "prettier": "^1.11.1"
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "next": "9.3.4",
+    "postcss-preset-env": "^6.7.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "tailwindcss": "^1.2.0"
   }
 }
