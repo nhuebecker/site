@@ -8,8 +8,17 @@ li.nav:not(:last-child)::after {
   content: " \00b7";
 }
 
+li.spaced:not(:last-child)::after {
+  content: " \00b7";
+}
+
+
 a {
-  @apply border-b border-gray-500 border-dotted;
+  @apply border-b text-gray-700 border-gray-500 border-dotted;
+}
+
+body {
+  @apply leading-9;
 }
 
 .redacted {
