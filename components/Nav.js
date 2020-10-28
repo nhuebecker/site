@@ -4,10 +4,8 @@ export default () => (
   <div className="mt-12">
     <ul className="flex justify-center align-center">
       <li className="mx-1 list-none nav">
-        <Link href="/shh">
-        <a>
-          <span className="redacted">**********</span>
-        </a>
+        <Link href="/">
+            <a>home</a>
         </Link>
       </li>
       <li className="mx-1 list-none nav">

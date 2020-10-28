@@ -4,10 +4,10 @@ import Link from "next/link";
 import Wrapper from "../components/Wrapper";
 import Nav from "../components/Nav";
 
-export default () => (
-  <Wrapper title="Nikolas Huebecker | Blog">
+const IndexPage = () => (
+  <Wrapper title="Nikolas Huebecker">
     <Nav />
-    <div className="pt-8">
+    <div className="pt-8 text-lg">
       <p className="mb-4">
         <strong>Nikolas Huebecker</strong> is working on{" "}
         <a href="/shh">
@@ -52,3 +52,5 @@ export default () => (
     </div>
   </Wrapper>
 );
+
+export default IndexPage;

@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
+    "@sanity/block-content-to-react": "^2.0.7",
+    "@sanity/client": "^2.0.1",
+    "@tailwindcss/typography": "^0.2.0",
     "next": "^10.0.0",
     "postcss-preset-env": "^6.7.0",
     "react": "16.13.1",

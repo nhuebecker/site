@@ -8,7 +8,7 @@ export default ({title, children}) => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main className="font-mono text-md">
+    <main className="font-sans leading-normal text-md">
       <div className="max-w-xl px-3 mx-auto">
         {children}
       </div>
